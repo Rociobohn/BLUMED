@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="public/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
@@ -12,30 +12,80 @@
     <title>BLUMED</title>
 </head>
 <body>
+    <header>  
         <nav>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">HOME</a>
-            <a href="#news">PRODUCTOS</a>
-            <a href="#contact">CONTACTO</a>
-            <a href="#about">SOBRE NOSOTROS</a>
-            </a>
-        </div>
-    </nav>
-    <header>
-        <div>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
+            <div class="topnav" id="myTopnav">
+            
+                 <a href="#home" class="active">HOME</a>
+                 <a href="#news">PRODUCTOS</a>
+                 <a href="#contact">CONTACTO</a>
+                 <a href="#about">SOBRE NOSOTROS</a>
+                 </a>
+                 
+            </div>
+        </nav>
     </header>
 
+<!--SLIDER-->
+<div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-1" id="song-1">
+      <img src="public/imagenes/logo.png" alt="song">
+    </label>
+    <label class="card" for="item-2" id="song-2">
+      <img src="public/imagenes/juana (2).jpeg" alt="song">
+    </label>
+    <label class="card" for="item-3" id="song-3">
+      <img src="public/imagenes/ambar (2).jpeg" alt="song">
+    </label>
+  </div>
+  <div class="player">
+    <div class="upper-part">
+      <div class="play-icon">
+        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+          <defs/>
+          <path d="M5 3l14 9-14 9V3z"/>
+        </svg>
+      </div>
+      <div class="info-area" id="test">
+        <label class="song-info" id="song-info-1">
+          <div class="title">BLUMED</div>
+          <div class="sub-line">
+            <div class="subtitle">Blumed</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-2">
+          <div class="title">JUANA</div>
+          <div class="sub-line">
+            <div class="subtitle">Blumed</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-3">
+          <div class="title">AMBAR</div>
+          <div class="sub-line">
+            <div class="subtitle">Blumed</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </div>
+</div>
 
-
+<!--termina slider-->
 
 
       <!--WAVES-->
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" class="waves" viewBox="0 0 1440 320">
             <path fill="#f0edcd" fill-opacity="1" d="M0,160L60,176C120,192,240,224,360,213.3C480,203,600,149,720,149.3C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
           </svg>
       </div>
